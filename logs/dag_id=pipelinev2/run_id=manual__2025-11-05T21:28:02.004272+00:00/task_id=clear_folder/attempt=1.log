@@ -1,0 +1,11 @@
+{"timestamp":"2025-11-06T02:25:29.631205Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-11-06T02:25:29.631758Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/pipeline.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-11-06T02:25:30.151812Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/pipeline.py","lineno":8,"logger":"py.warnings"}
+{"timestamp":"2025-11-06T02:25:30.168132Z","level":"info","event":"Removed file: /opt/airflow/data/merged_data.csv","logger":"task.stdout"}
+{"timestamp":"2025-11-06T02:25:30.169306Z","level":"info","event":"Removed directory: /opt/airflow/data/persons_cleaned","logger":"task.stdout"}
+{"timestamp":"2025-11-06T02:25:30.169534Z","level":"info","event":"Removed file: /opt/airflow/data/companies.csv","logger":"task.stdout"}
+{"timestamp":"2025-11-06T02:25:30.169909Z","level":"info","event":"Removed file: /opt/airflow/data/persons.csv","logger":"task.stdout"}
+{"timestamp":"2025-11-06T02:25:30.170173Z","level":"info","event":"Removed file: /opt/airflow/data/domain_counts.png","logger":"task.stdout"}
+{"timestamp":"2025-11-06T02:25:30.171862Z","level":"info","event":"Removed directory: /opt/airflow/data/companies_cleaned","logger":"task.stdout"}
+{"timestamp":"2025-11-06T02:25:30.171994Z","level":"info","event":"Clean process completed!","logger":"task.stdout"}
+{"timestamp":"2025-11-06T02:25:30.171424Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":218}
