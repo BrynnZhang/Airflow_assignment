@@ -25,21 +25,19 @@ Faker Data → PySpark Transform → Merge → Load into Postgres → Analyze �
 The Airflow DAG is named pipelinev2, scheduled to run daily at 2 AM.
 
 ##### 1️⃣ Data Ingestion
-Tasks: fetch_persons, fetch_companies
-Uses the Faker library to generate 100 random records each for persons and companies.
-Writes them to CSVs under `/opt/airflow/data/persons.csv and /opt/airflow/data/companies.csv.`
+- Tasks: `fetch_persons`, `fetch_companies`
+- Uses the Faker library to generate 100 random records each for persons and companies.
+- Writes them to CSVs under `/opt/airflow/data/persons.csv and /opt/airflow/data/companies.csv.`
 
 ##### 2️⃣ PySpark Transformation
-Task: spark_transform
-Reads the two CSVs into Spark DataFrames.
-Cleans data by:
-Lowercasing all email addresses
-Dropping duplicates based on email
-Writes cleaned data to:
-
-/opt/airflow/data/persons_cleaned/
-
-/opt/airflow/data/companies_cleaned/
+- Task: `spark_transform`
+- Reads the two CSVs into Spark DataFrames.
+- Cleans data by:
+    - Lowercasing all email addresses
+    - Dropping duplicates based on email
+- Writes cleaned data to:
+    - `/opt/airflow/data/persons_cleaned/`
+    - `/opt/airflow/data/companies_cleaned/`
 
 3️⃣ Merge CSVs
 
